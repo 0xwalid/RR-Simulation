@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Round Robin</title>
+    <link rel="stylesheet" href="vis.min.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src="vis.min.js"></script>
+    <script src="Queue.js"></script>
+
+  </head>
+  <body>
+    <h1>Round Robin Timeline Representation</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="visualization"></div>
+        <script src="app.js"></script>
+      </div>
+      </br>
+      </hr>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-1">
+          <div class="well row">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-3 control-label">Quantom</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="quantom" >
+              </div>
+            </div>
+          </div>
+          <div class="form-horizontal well row">
+            <h4> Adding Processes </h4>
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-3 control-label">Name</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="name" >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">CPU BurstTime</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="cpu" >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-3 control-label">Arrival Time</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="arrive">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button id="add-process" class="btn btn-default">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div  class="col-md-4 well">
+          <h3>Results:</h3>
+          <div id="results">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
